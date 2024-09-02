@@ -12,4 +12,4 @@
 *
 
 ## 스트레스와 요인들 간 상관관계
-![KakaoTalk_20240829_205520692](https://github.com/user-attachments/assets/9163a923-5246-4f1e-93a0-fd00393a8ce1)
+![KakaoTalk_20240829_205520692](https://github.com/user-attachments/assets/1b30fb80-5f86-45e5-816d-7ab9aa6b2ecb)
