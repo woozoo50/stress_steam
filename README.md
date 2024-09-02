@@ -52,11 +52,11 @@
 </table>
 
 
-<div align=center><h1> 개발 환경 </h1></div>
+## 개발 환경
 
-<div align=center> 
+<div> 
   <img src="https://img.shields.io/badge/python-3776AB?style=for-the-badge&logo=python&logoColor=white"> 
-  <img src="https://img.shields.io/badge/python-3776AB?style=for-the-badge&logo=jupyter&logoColor=white"> 
+  <img src="https://img.shields.io/badge/jupyter-FF8800?style=for-the-badge&logo=jupyter&logoColor=white"> 
   <br>
 
 ## 대표 이미지
