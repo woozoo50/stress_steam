@@ -52,12 +52,13 @@
 </table>
 
 
-## 개발 환경
+## STACKS
 <div> 
   <img src="https://img.shields.io/badge/python-3776AB?style=for-the-badge&logo=python&logoColor=white"> 
   <img src="https://img.shields.io/badge/jupyter-FF8800?style=for-the-badge&logo=jupyter&logoColor=white">
   <img src="https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white">
   <br>
+
 
 ## 대표 이미지
 <img width="200" height="200" alt="워드클라우드" src="https://github.com/user-attachments/assets/7d710668-035a-4ea3-a90b-0daed48c7874">
