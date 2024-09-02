@@ -26,8 +26,8 @@
 
 
 ## 대표 이미지
-<img width="165" alt="워드클라우드" src="https://github.com/user-attachments/assets/7d710668-035a-4ea3-a90b-0daed48c7874">
-<img width="173" alt="지도" src="https://github.com/user-attachments/assets/505cf5dc-b3fe-4829-8404-6a05d7e5937e">
-![KakaoTalk_20240829_205520692](https://github.com/user-attachㅛments/assets/1b30fb80-5f86-45e5-816d-7ab9aa6b2ecb)
+<img width="170" alt="워드클라우드" src="https://github.com/user-attachments/assets/7d710668-035a-4ea3-a90b-0daed48c7874">
+<img width="170" alt="지도" src="https://github.com/user-attachments/assets/505cf5dc-b3fe-4829-8404-6a05d7e5937e">
+<img width="170" alt="레이더그래프" src="https://github.com/user-attachments/assets/2d6b683f-b47d-492f-9f8d-5d2695efca6c>
 
 
