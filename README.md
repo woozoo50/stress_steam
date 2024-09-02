@@ -28,6 +28,6 @@
 ## 대표 이미지
 <img width="170" alt="워드클라우드" src="https://github.com/user-attachments/assets/7d710668-035a-4ea3-a90b-0daed48c7874">
 <img width="170" alt="지도" src="https://github.com/user-attachments/assets/505cf5dc-b3fe-4829-8404-6a05d7e5937e">
-![레이더그래프](https://github.com/user-attachments/assets/4d764876-08d2-480d-beb2-75552b69b50d)
+<img width="170" alt="레이더그래프" src="https://github.com/user-attachments/assets/4d764876-08d2-480d-beb2-75552b69b50d">
 
 
