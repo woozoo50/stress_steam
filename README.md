@@ -1,5 +1,5 @@
 # 스트레스에 영향을 주는 사회적 요인을 확인하고 시각화로 분석하기
-
+- - -
 
 
 ## 스트레스 지수 및 관련 통계 분석
@@ -48,7 +48,6 @@
 
 
 ## 대표 이미지
-- - -
 <img width="200" height="200" alt="워드클라우드" src="https://github.com/user-attachments/assets/7d710668-035a-4ea3-a90b-0daed48c7874">
 <img width="200" height="200" alt="지도" src="https://github.com/user-attachments/assets/505cf5dc-b3fe-4829-8404-6a05d7e5937e">
 <img width="200" height="200" alt="레이더그래프" src="https://github.com/user-attachments/assets/4d764876-08d2-480d-beb2-75552b69b50d">
