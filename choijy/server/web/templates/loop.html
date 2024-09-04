@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>서버에서 데이터 받기</title>
+</head>
+<body>
+<header>
+    <!-- nav 상단메뉴(네비게이션) -->
+    <nav>
+        <a href="/">Home</a>
+        <a href="/season">계절</a>
+        <a href="/loop">반복</a>
+        <a href="/calc">짝수/홀수 판정</a>
+    </nav>
+</header>
+<section>
+    <h2>반복, 조건문</h2>
+    <ul>
+    {% for i in items: %}
+        <li>{{loop.index}}번 요소- {{i}}</li>
+        {% endfor %}
+    </ul>
+    <ul>
+        {% for i in items: %}
+            {% if loop.index<3 %}
+            <li>{{loop.index}}번 요소- {{i}}</li>
+            {% endif %}
+        {% endfor %}
+    </ul>
+
+
+
+
+
+
+</section>
+</body>
+</html>

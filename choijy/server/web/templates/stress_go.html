@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+
+    <title>데이터 시각화</title>
+
+</head>
+<body>
+
+<header>
+    <h1>데이터 시각화</h1>
+</header>
+
+<nav>
+    <a href="/">홈</a>
+    <a href="/social">사회적 요인</a>
+    <a href="/individual">개인적 요인</a>
+    <a href="/stress_go">한눈에 보기</a>
+</nav>
+
+<div class="content">
+    <div class="select-container">
+        <label for="imageSelector2">그래프 유형:</label>
+        <select id="imageSelector2">
+            <option value="pie">파이차트</option>
+            <option value="graph">그래프</option>
+            <option value="correlation">상관 계수</option>
+            <option value="visualization">시각화</option>
+        </select>
+    </div>
+
+    <div class="select-container">
+        <label for="imageSelector">요소 선택:</label>
+        <select id="imageSelector">
+            <!-- 옵션은 JavaScript에 의해 동적으로 추가됩니다 -->
+        </select>
+    </div>
+
+    <img id="myImage" src="" alt="시각화 이미지">
+</div>
+
+
+
+<script>
+    const dataOptions = {
+        pie: [
+            { value: "../static/소득별.png", text: "남녀 소득수준" },
+        ],
+        graph: [
+            { value: "../static/stress_gender.png", text: "남녀 스트레스" },
+            { value: "../static/stress_age.png", text: "연령별 스트레스" },
+        ],
+        correlation: [
+            { value: "../static/여가시간.png", text: "여가시간" },
+            { value: "../static/흡연율.png", text: "흡연율" },
+            { value: "../static/실업자.png", text: "실업자" },
+            { value: "../static/취업자.png", text: "취업자" },
+            { value: "../static/문화체육시설.png", text: "문화체육시설" },
+            { value: "../static/고혈압.png", text: "고혈압" },
+            { value: "../static/우울증.png", text: "우울증" },
+            { value: "../static/경제활동.png", text: "경제활동" },
+            { value: "../static/비경제활동.png", text: "비경제활동" },
+            { value: "../static/연관요소.png", text: "최종 상관계수" }
+        ],
+        visualization: [
+            { value: "../static/지역.png", text: "지역" },
+            { value: "../static/워드클라우드.png", text: "워드클라우드" },
+        ]
+    };
+
+    const imageSelector2 = document.getElementById("imageSelector2");
+    const imageSelector = document.getElementById("imageSelector");
+    const myImage = document.getElementById("myImage");
+
+    function updateImageOptions() {
+        const selectedGraphType = imageSelector2.value;
+        const options = dataOptions[selectedGraphType] || [];
+
+        // 기존 옵션 제거
+        imageSelector.innerHTML = "";
+
+        // 새로운 옵션 추가
+        options.forEach(option => {
+            const newOption = document.createElement("option");
+            newOption.value = option.value;
+            newOption.text = option.text;
+            imageSelector.appendChild(newOption);
+        });
+
+        // 첫 번째 옵션으로 초기화
+        if (options.length > 0) {
+            imageSelector.value = options[0].value;
+            myImage.src = options[0].value;
+            myImage.style.display = "block";
+        } else {
+            myImage.style.display = "none";
+        }
+    }
+
+    // 초기화: 첫 번째 그래프 타입에 대한 옵션을 로드
+    updateImageOptions();
+
+    // 그래프 종류 변경 시 이미지 옵션 업데이트
+    imageSelector2.addEventListener("change", updateImageOptions);
+
+    // 이미지 선택 시 해당 이미지 표시
+    imageSelector.addEventListener("change", function() {
+        myImage.src = this.value;
+        myImage.style.display = "block";
+    });
+</script>
+
+</body>
+</html>

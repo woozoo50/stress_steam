@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #121212; /* 어두운 배경색 */
+    color: #f4f4f4; /* 텍스트 색상 (어두운 배경에 맞춰 밝게 설정) */
+}
+
+header {
+    background-color: #003366;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+}
+
+nav {
+    background-color: #333;
+    padding: 10px 0;
+    display: flex;
+    justify-content: flex-start;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+}
+
+nav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.fullpage {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1e1e1e; /* 어두운 배경 색상 */
+    padding: 20px;
+    box-sizing: border-box;
+    border: 1px solid #333; /* 경계선 색상 */
+    border-radius: 8px; /* 둥근 모서리 */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.5); /* 더 깊은 그림자 효과 */
+    overflow: hidden; /* 이미지가 영역을 벗어날 경우 숨김 */
+}
+
+.main-content {
+    text-align: center;
+}
+
+#stressImage {
+    max-width: 500px; /* 페이지 가로폭의 90% */
+    max-height: 400px; /* 화면 세로폭의 80% */
+    object-fit: contain; /* 이미지 비율 유지 및 영역에 맞게 조정 */
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.5); /* 어두운 그림자 효과 */
+}
+
+.button-container {
+    margin-top: 20px;
+}
+
+.button-container button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    background-color: #003366;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button-container button:hover {
+    background-color: #002244;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
