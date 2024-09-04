@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=2, initial-scale=1.0">
+    <title>검색 폼...</title>
+    <style>
+        .error{
+            color:red;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <nav>
+        <a href="/">Home</a>
+        <a href="/season">계절</a>
+        <a href="/loop">반복</a>
+        <a href="/calc">짝수/홀수 판정</a>
+    </nav>
+</header>
+    <section>
+        <h2>짝수/홀수 판정</h2>
+
+        <form action="" method="post">
+            <!--name 속성은 서버로 전달 된다. -->
+            <!--예외처리 -->
+            {% if erroMessage: %}
+                <p class="error">{{erroMessage}}</p>
+            {% endif %}
+            <label>숫자 입력</label>
+            <input type="text" name="num" placeholder="정수를 입력하라고 ">
+            <input type="submit" value="전송">
+        </form>
+    </section>
+
+
+
+</body>
+</html>

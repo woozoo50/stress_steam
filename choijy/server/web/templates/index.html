@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style2.css') }}">
+    <title>데이터 시각화</title>
+</head>
+<body>
+
+<nav>
+    <a href="/">홈</a>
+    <a href="/social">사회적 요인</a>
+    <a href="/individual">개인적 요인</a>
+    <a href="/stress_go">한눈에 보기</a>
+</nav>
+
+<div class="fullpage">
+    <div class="main-content">
+        <img id="stressImage" src="./static/마지막.jpg" alt="스트레스 이미지">
+        <div class="button-container">
+            <button id="mainButton">개인적 요인</button>
+        </div>
+    </div>
+</div>
+
+<script>
+    const images = [
+        { src: "./static/마지막.jpg", buttonText: "개인적 요인", buttonLink: "/individual" },
+        { src: "./static/사회적요안.jpg", buttonText: "사회적 요인", buttonLink: "/social" },
+        { src: "./static/stress123.jpg", buttonText: "한눈에 보기", buttonLink: "/stress_go" }
+    ];
+
+    const imageElement = document.getElementById("stressImage");
+    const buttonElement = document.getElementById("mainButton");
+
+    let currentIndex = 0;
+
+    function updateImage() {
+        currentIndex = (currentIndex + 1) % images.length;
+        const currentImage = images[currentIndex];
+        imageElement.src = currentImage.src;
+        buttonElement.textContent = currentImage.buttonText;
+        buttonElement.onclick = () => window.location.href = currentImage.buttonLink;
+    }
+
+    setInterval(updateImage, 3000);
+    updateImage();
+</script>
+
+</body>
+</html>

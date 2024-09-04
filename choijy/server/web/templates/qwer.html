@@ -1,0 +1,12 @@
+
+<script>
+    // JavaScript를 사용하여 static 폴더에 있는 folium.html 파일을 비동기로 로드
+    fetch('../static/map.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('folium-container').innerHTML = data; // 로드된 HTML을 컨테이너에 삽입
+        })
+        .catch(error => console.error('Error loading folium.html:', error));
+</script>
+
+

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>서버에서 데이터 받기</title>
+</head>
+<body>
+    <header>
+        <!-- nav 상단메뉴(네비게이션) -->
+        <nav>
+            <a href="/">Home</a>
+            <a href="/season">계절</a>
+            <a href="/loop">반복</a>
+            <a href="/calc">짝수/홀수 판정</a>
+        </nav>
+    </header>
+    <section>
+        <h2>서버에서 데이터 받기</h2>
+        <h3>현재 계절:{{season}}</h3>
+        <!--목록 태그<ul><li></li></ul>-->
+        <ul>
+            {% for i in seasons:%}
+                <li>{{i}}</li>
+            {% endfor %}
+        </ul>
+    </section>
+</body>
+</html>
